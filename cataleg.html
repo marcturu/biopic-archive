@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pàgina d'inici del projecte Descobrir.">
+    <meta name="description" content="Conjunt d'informació sobre pel·lícules, series i documentals.">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <title>Biopic Archive - Catàleg</title>
 
@@ -13,14 +13,14 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- Header comú -->
     <header class="site-header full-width">
-        <div class="header-inner full-width">
+        <div class="header-inner">
             <a href="index.html" class="logo">
                 <img src="img/logo-biopic-archive.svg" alt="Biopic Archive">
             </a>
@@ -35,10 +35,10 @@
     </header>
 
     <!-- Contenidor main -->
-    <main>
+    <main class="main-cataleg">
         <h1 class="hero">Catàleg de Biopic Archive</h1>
 
-        <section class="search full-width">
+        <div class="search full-width">
             <nav class="inner-nav">
                 <ul>
                     <li><a href="#pelicules">PEL·LÍCULES</a></li>
@@ -51,9 +51,9 @@
                 <input type="text" placeholder="Cerca..." name="query">
                 <img src="img/icon-search.svg" alt="Icona de cerca">
             </form>
-        </section>
+        </div>
 
-        <section id="films" class="category-section full-width">
+        <section id="pelicules" class="category-section full-width">
             <h2>Pel·lícules</h2>
             
             <div class="item-card">
@@ -66,7 +66,7 @@
                     <figure>
                         <img src="img/Lee_Miller.jpg" alt="Lee Miller">
                         <figcaption>
-                            Lee Miller el 1943 (U.S. Army Official Photograph)
+                            Lee Miller el 1943 (<abbr title="United States">U.S.</abbr> Army Official Photograph)
                         </figcaption>
                     </figure>
                 </div>
@@ -76,7 +76,7 @@
                 <div class="item-left">
                     <h3 class="name"><cite>Elvis</cite></h3>
                     <h4>Baz Luhrmann (2022)</h4>
-                    <a href="" class="btn btn-white">FITXA COMPLETA</a>
+                    <a href="#" class="btn btn-white">FITXA COMPLETA</a>
                 </div>
                 <div class="item-right">
                     <figure>
@@ -92,7 +92,7 @@
                 <div class="item-left">
                     <h3 class="name"><cite>La meva setmana amb Marilyn</cite></h3>
                     <h4>Simon Curtis (2011)</h4>
-                    <a href="" class="btn btn-white">FITXA COMPLETA</a>
+                    <a href="#" class="btn btn-white">FITXA COMPLETA</a>
                 </div>
                 <div class="item-right">
                     <figure>
@@ -108,7 +108,7 @@
                 <div class="item-left">
                     <h3 class="name"><cite>Frida</cite></h3>
                     <h4>Julie Taymor (2002)</h4>
-                    <a href="" class="btn btn-white">FITXA COMPLETA</a>
+                    <a href="#" class="btn btn-white">FITXA COMPLETA</a>
                 </div>
                 <div class="item-right">
                     <figure>
@@ -121,7 +121,7 @@
             </div>
 
             <div class="category-action">
-                <a href="" class="btn btn-black">TOTES LES PEL·LÍCULES</a>
+                <a href="#" class="btn btn-black">TOTES LES PEL·LÍCULES</a>
             </div>
         </section>
 
@@ -132,7 +132,7 @@
                 <div class="item-left">
                     <h3 class="name"><cite>Un escàndol molt anglès</cite></h3>
                     <h4>3 episodis (2018)</h4>
-                    <a href="fitxa.html" class="btn btn-white">FITXA COMPLETA</a>
+                    <a href="#" class="btn btn-white">FITXA COMPLETA</a>
                 </div>
                 <div class="item-right">
                     <figure>
@@ -148,7 +148,7 @@
                 <div class="item-left">
                     <h3 class="name"><cite>The Crown</cite></h3>
                     <h4>60 episodis (2016 — 2023)</h4>
-                    <a href="" class="btn btn-white">FITXA COMPLETA</a>
+                    <a href="#" class="btn btn-white">FITXA COMPLETA</a>
                 </div>
                 <div class="item-right">
                     <figure>
@@ -164,7 +164,7 @@
                 <div class="item-left">
                     <h3 class="name"><cite>American Crime Story: The People v. O.J. Simpson</cite></h3>
                     <h4>10 episodis (2016)</h4>
-                    <a href="" class="btn btn-white">FITXA COMPLETA</a>
+                    <a href="#" class="btn btn-white">FITXA COMPLETA</a>
                 </div>
                 <div class="item-right">
                     <figure>
@@ -180,7 +180,7 @@
                 <div class="item-left">
                     <h3 class="name"><cite>Borgia</cite></h3>
                     <h4>J38 episodis (2011 — 2014)</h4>
-                    <a href="" class="btn btn-white">FITXA COMPLETA</a>
+                    <a href="#" class="btn btn-white">FITXA COMPLETA</a>
                 </div>
                 <div class="item-right">
                     <figure>
@@ -193,18 +193,18 @@
             </div>
 
             <div class="category-action">
-                <a href="" class="btn btn-black">TOTES LES SÈRIES</a>
+                <a href="#" class="btn btn-black">TOTES LES SÈRIES</a>
             </div>
         </section>
 
         <section id="documentals" class="category-section full-width">
-            <h2>Docuemntals</h2>
+            <h2>Documentals</h2>
             
             <div class="item-card">
                 <div class="item-left">
                     <h3 class="name"><cite>La niña de los cabellos blancos</cite></h3>
                     <h4>Marcos Hernández (2025)</h4>
-                    <a href="fitxa.html" class="btn btn-white">FITXA COMPLETA</a>
+                    <a href="#" class="btn btn-white">FITXA COMPLETA</a>
                 </div>
                 <div class="item-right">
                     <figure>
@@ -220,7 +220,7 @@
                 <div class="item-left">
                     <h3 class="name"><cite>What Happened, Miss Simone?</cite></h3>
                     <h4>Liz Garbus (2015)</h4>
-                    <a href="" class="btn btn-white">FITXA COMPLETA</a>
+                    <a href="#" class="btn btn-white">FITXA COMPLETA</a>
                 </div>
                 <div class="item-right">
                     <figure>
@@ -236,7 +236,7 @@
                 <div class="item-left">
                     <h3 class="name"><cite>Citizenfour</cite></h3>
                     <h4>Laura Poitras (2014)</h4>
-                    <a href="" class="btn btn-white">FITXA COMPLETA</a>
+                    <a href="#" class="btn btn-white">FITXA COMPLETA</a>
                 </div>
                 <div class="item-right">
                     <figure>
@@ -252,7 +252,7 @@
                 <div class="item-left">
                     <h3 class="name"><cite>Man On Wire</cite></h3>
                     <h4>James Marsh (2008)</h4>
-                    <a href="" class="btn btn-white">FITXA COMPLETA</a>
+                    <a href="#" class="btn btn-white">FITXA COMPLETA</a>
                 </div>
                 <div class="item-right">
                     <figure>
@@ -265,7 +265,7 @@
             </div>
 
             <div class="category-action">
-                <a href="" class="btn btn-black">TOTS ELS DOCUMENTALS</a>
+                <a href="#" class="btn btn-black">TOTS ELS DOCUMENTALS</a>
             </div>
         </section>
     </main>
@@ -273,53 +273,52 @@
     <!-- Footer comú -->
     <footer class="site-footer full-width">
         <div class="footer-inner">
-            <section class="newsletter">
+            <div class="newsletter">
                 <p>Butlletí electrònic: totes les novetats a la teva safata d’entrada</p>
                 
                 <form action="#" method="post">
                     <label for="email" class="visually-hidden"></label>
-                    <input type="email" id="email" name="email" placeholder="El teu correu">
+                    <input type="email" id="email" name="email" placeholder="El teu correu" required>
                 
                     <label class="privacy">
                         <input type="checkbox" required>
                         En subscriure’m, accepto rebre el butlletí de Biopic Archive i declaro que he llegit i accepto la vostra
-                        <a href="">política de privacitat</a>
+                        <a href="#">política de privacitat</a>
                     </label>
                     
                     <button type="submit" class="btn btn-white">SUBSCRIU-ME</button>
                 </form>
-            </section>
+            </div>
 
-            <section class="footer-grid">
+            <div class="footer-grid">
                 <div class="footer-block">
                     <ul>
-                        <li><a href="">Sobre nosaltres</a></li>
-                        <li><a href="">Contacte</a></li>
+                        <li><a href="#">Sobre nosaltres</a></li>
+                        <li><a href="#">Contacte</a></li>
                     </ul>
                 </div>
                 <div class="footer-block">
                     <ul>
-                        <li><a href="">Política de privacitat</a></li>
-                        <li><a href="">Política de <i lang="en">cookies</i></a></li>
-                        <li><a href="">Avís legal</a></li>
+                        <li><a href="#">Política de privacitat</a></li>
+                        <li><a href="#">Política de <i lang="en">cookies</i></a></li>
+                        <li><a href="#">Avís legal</a></li>
                     </ul>
                 </div>
                 <div class="footer-block">
                     <ul>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">TikTok</a></li>
-                        <li><a href="">X</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">X</a></li>
                     </ul>
                 </div>
                 <div class="footer-block footer-credits">
                     <p>
                         <a href="https://www.uoc.edu/" target="_blank"> <abbr title="Universitat Oberta de Catalunya">UOC</abbr></a>, 2025-2026.
-                            <abbr title="HyperText Markup Language">HTML</abbr> i <abbr title="Cascading Style Sheets">CSS</abbr>
-                        </a><br>
+                            <abbr title="HyperText Markup Language">HTML</abbr> i <abbr title="Cascading Style Sheets">CSS</abbr><br>
                         Marc Turu Roca
                     </p> 
                 </div>
-            </section>
+            </div>
         </div>
     </footer>
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pàgina d'inici del projecte Descobrir.">
+    <meta name="description" content="Pàgina d'inici del Biopic Archive.">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <title>Biopic Archive - Index</title>
 
@@ -13,14 +13,14 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     
     <!-- Header comú -->
-    <header class="site-header">
-        <div class="header-inner full-width">
+    <header class="site-header full-width">
+        <div class="header-inner">
             <a href="index.html" class="logo">
                 <img src="img/logo-biopic-archive.svg" alt="Biopic Archive">
             </a>
@@ -42,16 +42,15 @@
                 <h2 class="hero-tagline"> L'arxiu definitiu per descobrir <i lang="en">biopics</i>: històries autèntiques que mereixen ser
                 explicades.</h2>
             </div>
-
         </section>
 
         <section class="featured-story full-width">
             <div class="featured-inner">
                 <div class="featured-content">
                     <h3>Història destacada</h3>
-                    <h4><cite>Oppenheimer</cite> (2023)</a></h4>
+                    <h4><cite>Oppenheimer</cite> (2023)</h4>
                     <p>La vida del físic darrere del projecte Manhattan</p>
-                    <a href="" class="btn btn-white">VEGEU FITXA COMPLETA</a>
+                    <a href="#" class="btn btn-white">VEGEU FITXA COMPLETA</a>
                 </div>
 
                 <div class="featured-media">
@@ -73,7 +72,7 @@
                 <div class="categories-grid">
                     <div class="category-card">
                         <img src="img/icon-films.svg" alt="Icona Pel·lícules">
-                        <a href="cataleg.html#films">Pel·lícules</a>
+                        <a href="cataleg.html#pelicules">Pel·lícules</a>
                     </div>
                     <div class="category-card">
                         <img src="img/icon-series.svg" alt="Icona Sèries">
@@ -91,53 +90,52 @@
     <!-- Footer comú -->
     <footer class="site-footer full-width">
         <div class="footer-inner">
-            <section class="newsletter">
+            <div class="newsletter">
                 <p>Butlletí electrònic: totes les novetats a la teva safata d’entrada</p>
                 
                 <form action="#" method="post">
                     <label for="email" class="visually-hidden"></label>
-                    <input type="email" id="email" name="email" placeholder="El teu correu">
+                    <input type="email" id="email" name="email" placeholder="El teu correu" required>
                 
                     <label class="privacy">
                         <input type="checkbox" required>
                         En subscriure’m, accepto rebre el butlletí de Biopic Archive i declaro que he llegit i accepto la vostra
-                        <a href="">política de privacitat</a>
+                        <a href="#">política de privacitat</a>
                     </label>
                     
                     <button type="submit" class="btn btn-white">SUBSCRIU-ME</button>
                 </form>
-            </section>
+            </div>
 
-            <section class="footer-grid">
+            <div class="footer-grid">
                 <div class="footer-block">
                     <ul>
-                        <li><a href="">Sobre nosaltres</a></li>
-                        <li><a href="">Contacte</a></li>
+                        <li><a href="#">Sobre nosaltres</a></li>
+                        <li><a href="#">Contacte</a></li>
                     </ul>
                 </div>
                 <div class="footer-block">
                     <ul>
-                        <li><a href="">Política de privacitat</a></li>
-                        <li><a href="">Política de <i lang="en">cookies</i></a></li>
-                        <li><a href="">Avís legal</a></li>
+                        <li><a href="#">Política de privacitat</a></li>
+                        <li><a href="#">Política de <i lang="en">cookies</i></a></li>
+                        <li><a href="#">Avís legal</a></li>
                     </ul>
                 </div>
                 <div class="footer-block">
                     <ul>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">TikTok</a></li>
-                        <li><a href="">X</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">X</a></li>
                     </ul>
                 </div>
                 <div class="footer-block footer-credits">
                     <p>
                         <a href="https://www.uoc.edu/" target="_blank"> <abbr title="Universitat Oberta de Catalunya">UOC</abbr></a>, 2025-2026.
-                            <abbr title="HyperText Markup Language">HTML</abbr> i <abbr title="Cascading Style Sheets">CSS</abbr>
-                        </a><br>
+                            <abbr title="HyperText Markup Language">HTML</abbr> i <abbr title="Cascading Style Sheets">CSS</abbr><br>
                         Marc Turu Roca
                     </p> 
                 </div>
-            </section>
+            </div>
         </div>
     </footer>
 

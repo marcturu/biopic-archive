@@ -1,4 +1,8 @@
-/* ----- Configuracions globals  ----- */
+/* ----- Reset i configuracions globals  ----- */
+* {
+    margin: 0;
+    padding: 0;
+}
 *,
 *::before,
 *::after {
@@ -37,6 +41,7 @@ abbr {
 h1 {
     font-size: 2.25rem;
     font-family: var(--font-family-playfair);
+    margin: 0;
 }
 
 h2 {
@@ -45,7 +50,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-family: var(--font-family-playfair);
     font-weight: var(--font-weight-textos-negreta);
 }
@@ -59,37 +64,32 @@ p {
     font-size: 1.1rem;
 }
 
-/* ----- Contenidors i estils comuns (ja siguin dels 4 arxius o dels 3 - index.html ----- */
+/* ----- Contenidors i estils comuns ----- */
 .full-width {
-    border: 1px solid blue;
     width: 100%;
-    padding: 0 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     line-height: 1.5;
 }
 
 .inner {
-    border: 1px solid red;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 1rem;
+    max-width: none;
     padding-left: 1rem;
-    max-width: 1000px;
-    line-height: 1.5;
+    padding-right: 1rem;
+    margin: 0;
 }
 
 .site-header {
     background-color: var(--color-principal);
-    padding: 2rem 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .header-inner {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0;
-    margin: 0;
-    gap: 0;
+    gap: 1rem;
 }
 
 .main-nav ul {
@@ -111,7 +111,7 @@ p {
     content: "·";
     display: inline-block;
     color: var(--color-hover-enllaços-header-i-footer);
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 0.75;
     margin: 0 0.75rem;
 
@@ -120,7 +120,8 @@ p {
 .site-footer {
     background-color: var(--color-principal);
     color: var(--color-textos-i-enllaços-sobre-fons-negre);
-    padding: 2rem 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .footer-inner {
@@ -155,11 +156,11 @@ p {
 }
 
 .newsletter p {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
 }
 
 .newsletter .privacy {
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .footer-grid {
@@ -194,7 +195,7 @@ p {
     display: inline-block;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
 }
 
 .btn-white {
@@ -211,6 +212,7 @@ p {
     background-color: transparent;
     color: var(--color-principal);
     border: 1px solid var(--color-principal);
+    padding: 0.5rem 0.25rem;
 }
 
 .btn-white:hover,
@@ -220,33 +222,34 @@ p {
 }
 
 /* ----- Estils específics d'index.html ----- */
-/* Hero */
 .hero p {
     font-family: var(--font-family-playfair);
 }
 
 .hero {
     text-align: center;
-    padding: 2rem 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 .hero .inner {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
 }
 
 .hero-tagline {
     max-width: 100rem;
-    font-size: 1.23rem;
+    font-size: 1.3rem;
     font-weight: var(--font-weight-textos-regulars);
 }
 
-/* Història destacada */
 .featured-story {
     background-color: var(--color-principal);
     color: var(--color-textos-i-enllaços-sobre-fons-negre);
-    padding: 3rem 1rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
 }
 
 .featured-inner {
@@ -254,8 +257,12 @@ p {
     gap: 2rem;
 }
 
-.featured-content h2 {
-    margin: 0 0 2.5rem 0;
+.featured-content h3 {
+    margin-bottom: 2.5rem;
+}
+
+.featured-content h4 {
+    margin-bottom: 1rem;
 }
 
 .featured-content p {
@@ -269,9 +276,9 @@ p {
     border: 0;
 }
 
-/* Categories */
 .categories {
-    padding: 3rem 0 10rem 0;
+    padding-top: 3rem;
+    padding-bottom: 10rem
 }
 
 .categories h3 {
@@ -298,6 +305,7 @@ p {
     color: var(--color-textos-i-enllaços-sobre-fons-negre);
     text-decoration: none;
 }
+
 .category-card a:hover {
     color: var(--color-hover-enllaços-header-i-footer)
 }
@@ -328,6 +336,10 @@ p {
     color: var(--color-hover-enllaços-header-i-footer);
 }
 
+.main-cataleg h1.hero {
+    padding-bottom: 4rem;
+}
+
 .search-form {
     position: relative;
 }
@@ -348,6 +360,10 @@ p {
     pointer-events: none; 
 }
 
+.category-section h2 {
+    margin: 2rem 0;
+}
+
 .item-card {
     display: flex;
     flex-direction: row; 
@@ -363,11 +379,25 @@ p {
 .item-left {
     background-color: var(--color-principal);
     color: var(--color-textos-i-enllaços-sobre-fons-negre);
-    padding: 0.75rem;
+    padding: 1rem;
+    gap: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+}
+
+.name {
+    font-family: var(--font-family-playfair);
+    font-weight: var(--font-weight-textos-negreta);
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+.item-left a {
+    margin-top: 1rem;
 }
 
 .item-right {
@@ -391,23 +421,14 @@ p {
 .item-right img {
     max-width: 100%;
     border-radius: 50%;
-    border: 1px solid var(--color-fons-textos-fitxa-i-figura-retratada);
+    border: 1px solid var(--color-principal);
     object-fit: cover;
 }
 
 .item-right figcaption {
     text-align: center;
     margin: 1rem 0;
-    font-size: 0.75rem;
-}
-
-.name {
-    font-family: var(--font-family-playfair);
-    font-weight: var(--font-weight-textos-negreta);
-    font-size: 1.22rem;
-    line-height: 1.2;
-    margin: 0;
-    padding: 0;
+    font-size: 0.77rem;
 }
 
 .category-action {
@@ -421,32 +442,255 @@ p {
     margin-bottom: 10rem;
 }
 
-/* ----- Tablet  ----- */
+/* ----- Estils específics de fitxa.html ----- */
+.section-label-grey {
+    background-color: var(--color-fons-textos-fitxa-i-figura-retratada);
+    color: var(--color-principal);
+    font-size: 1rem;
+    padding: 0.3rem 0.2rem;
+    display: inline-block;
+}
+
+.section-label-grey.fitxa {
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-label-grey.figura {
+    margin-top: 1rem;
+}
+
+.fitxa-figure-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid var(--color-principal);
+    border-bottom: 1px solid var(--color-principal);
+    padding: 2.5rem 0;
+    margin: 2.5rem 0;
+}
+
+.fitxa-image img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 1px solid var(--color-principal);
+    object-fit: cover;
+}
+
+
+.fitxa-lead {
+    font-weight: var(--font-weight-textos-negreta);
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+.fitxa-data h2,
+.fitxa-sinopsi h2 {
+    margin-bottom: 2rem;
+}
+
+.data-list {
+    display: block;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+.data-list div {
+    display: block;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.data-list dt {
+    font-weight: var(--font-weight-textos-negreta);
+    font-size: 1.1rem;
+}
+
+.data-list dd {
+    margin-left: 2rem;
+    padding: 0.5rem 0;
+    text-align: left;
+}
+
+.actors-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.5rem;
+}
+
+.actors-list li {
+    position: relative;
+    padding-right: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.actors-list li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: var(--color-hover-enllaços-header-i-footer);
+}
+
+.fitxa-sinopsi {
+    margin-bottom: 7.5rem;
+}
+
+.fitxa-sinopsi p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.fitxa-video {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.fitxa-video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.fitxa-video figcaption {
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+/* ----- Estils específics de blog.html ----- */
+.hero.blog {
+    text-align: start;
+}
+
+.blog-article section {
+    margin-bottom: 3rem;
+}
+.post-tags {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-title {
+    font-size: 1.5rem;
+}
+
+.post-title a {
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    color: var(--color-hover-enllaços-header-i-footer)
+}
+
+.post-date {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.post-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.75rem;
+}
+
+.time-comments {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 2rem;
+    font-size: 0.85rem;
+}
+
+.time-comments a {
+    text-decoration: none;
+    color: var(--color-principal);
+}
+
+.time-comments-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.time-comments-item a {
+    border-bottom: 1px dotted var(--color-principal);
+}
+
+.time-comments-item a,
+.post-llegeix {
+    text-decoration: none; 
+    color: var(--color-principal);
+    border-bottom: 1px dotted var(--color-principal);
+    transition: border-bottom 0.3s; 
+}
+
+.time-comments-item a:hover,
+.post-llegeix:hover {
+    border-bottom: 1px solid var(--color-principal);
+    text-decoration: none;
+}
+
+.post-llegeix {
+    display: inline-block;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 10rem;
+}
+
+.page {
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    background-color: var(--color-textos-i-enllaços-sobre-fons-negre);
+    color: var(--color-principal);
+}
+
+.page-active {
+    background-color: var(--color-principal);
+    color: var(--color-textos-i-enllaços-sobre-fons-negre);
+}
+
+/* ----- Tauleta  ----- */
 @media (min-width: 768px) {
+    /* ----- Contenidors i estils comuns ----- */
     h1 {
         font-size: 3rem;
-    }
-
-    .hero-tagline {
-        font-size: 1.25rem;
     }
 
     h3 {
         font-size: 2rem;
     }
 
-    .header-inner { /* Elements del header en fila */
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    .header-inner {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-    }
-
-    .categories-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .category-card img {
-        width: 9rem;
     }
 
     .footer-grid {
@@ -459,20 +703,113 @@ p {
     .footer-grid .footer-block:nth-child(2) { grid-column: 1; grid-row: 2; } 
     .footer-grid .footer-block:nth-child(3) { grid-column: 2; grid-row: 1; }
     .footer-grid .footer-block:nth-child(4) { grid-column: 2; grid-row: 2; }
-}
 
+    /* ----- Estils específics d'index.html ----- */
+    .hero .inner {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .featured-content p {
+        font-size: 1.1rem;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .category-card img {
+        width: 9rem;
+    }
+
+    /* ----- Estils específics de cataleg.html ----- */
+    .category-section h2 {
+        font-size: 2rem;
+    }
+
+    h3.name {
+        font-size: 1.5rem;
+    }
+
+    .item-right img {
+        width: 45%;
+        max-width: 45%;
+    }
+
+    .item-right figcaption {
+        font-size: 0.8rem;
+    }
+
+    /* ----- Estils específics de fitxa.html ----- */
+    .fitxa-lead {
+        font-size: 1.3rem;
+    }
+
+    .actors-list li {
+        padding-right: 1rem;
+    }
+
+    .fitxa-data h2,
+    .fitxa-sinopsi h2 {
+        font-size: 2rem;
+    }
+
+    .fitxa-sinopsi p {
+        font-size: 1.1rem;
+    }
+
+    /* ----- Estils específics de blog.html ----- */
+    h2.post-title {
+        font-size: 2rem;
+    }
+
+    .post-text {
+        font-size: 1.1rem;
+    }
+}
 
 /* ----- Desktop  ----- */
 @media (min-width: 1024px) {
+    /* ----- Contenidors i estils comuns ----- */
     h4 {
         font-size: 1.5rem;
     }
 
+    /* Definició del contenidor més petit per a dispositius grans */
     .inner {
-        max-width: 1000px; /* Fitxa i blog */
-        margin: 0 auto;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
+    .header-inner {
+        padding: 0 2.5rem;
+    }
+    
+    .footer-inner {
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-items: start;
+        gap: 5rem;
+        padding: 0 2.5rem;
+    }
+
+    .newsletter .privacy {
+        font-size: 1.25rem;
+    }
+
+    .footer-grid {
+        column-gap: 7rem;
+        row-gap: 0rem;
+    }
+
+    .footer-grid .footer-block:nth-child(4) {
+        margin-top: 2.5rem;
+    }
+
+    /* ----- Estils específics d'index.html ----- */
     .hero {
         padding: 5rem 0 6rem 0;
     }
@@ -502,21 +839,128 @@ p {
         width: 13rem;
     }
 
-    .footer-inner {
-        grid-template-columns: auto auto;
-        justify-content: space-between;
+    /* ----- Estils específics de cataleg.html ----- */
+    
+    h3.name {
+        font-size: 1.53rem;
+    }
+
+    .item-left h4 {
+        font-size: 1rem;
+    }
+
+    .main-cataleg {
+        display: grid;
+        grid-template-columns: 15% 80%;
+        column-gap: 2rem;
         align-items: start;
-        border: 1px solid yellow;
-        gap: 5rem;
-        padding: 0 2.5rem;
+        justify-content: center;
     }
 
-    .newsletter .privacy {
-        font-size: 1.15rem;
+    .main-cataleg .hero {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-size: 3.5rem;
+        padding: 1.25rem;
     }
 
-    .footer-grid {
-        column-gap: 7rem;
-        row-gap: 1.5rem;
+    .search {
+        grid-column: 1;
+    }
+
+    #films,
+    #series,
+    #documentals {
+        grid-column: 2;
+    }
+
+    .category-section {
+        display: block;
+    }
+
+    .category-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .category-section h2,
+    .category-section .category-action {
+        grid-column: 1 / -1;
+        margin: 0 0 1rem 0;
+    }
+
+    .item-left {
+        padding: 1rem;
+    }
+
+    /* ----- Estils específics de fitxa.html ----- */
+    .fitxa-figure-block {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .fitxa-image {
+        flex: 0 0 40%;
+        max-width: 40%;
+        margin: 0;
+    }
+    
+    .fitxa-figure-block > div,
+    .fitxa-figure-block > p {
+        flex: 1;
+    }
+
+    .fitxa-lead {
+        font-size: 1.2rem;
+    }
+
+    .fitxa-sinopsi p {
+        font-size: 1.1rem;
+    }
+
+    .actors-list li {
+        padding-right: 0.75rem;
+    }
+
+    /* ----- Estils específics de blog.html ----- */
+    .blog-article section {
+        display: grid;
+        grid-template-columns: 4.8fr 1fr; 
+        align-items: start;
+        column-gap: 2rem;
+    }
+
+    .blog-article section .post-tags,
+    .blog-article section .post-title,
+    .blog-article section .post-date,
+    .blog-article section .post-text {
+        grid-column: 1; 
+    }
+
+    .blog-article section .time-comments {
+        grid-column: 2; 
+        align-self: center;
+        margin-top: 1.5rem;
+    }
+
+    .blog-article section .post-llegeix {
+        display: inline-block;
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px dotted var(--color-principal);
+        padding-bottom: 2px;
+        text-decoration: none;
+        max-width: fit-content;
+        align-self: start;
+    }
+
+    .blog-article section .post-llegeix:hover {
+        border-bottom: 1px solid var(--color-principal);
+    }
+
+    .post-text {
+        font-size: 1.075rem;
     }
 }
