@@ -1,4 +1,4 @@
-# <img src="img/logo-biopic-archive.svg" alt="Bit Article" width="250"/> — Archival platform for biographical content
+# <img src="img/logo-biopic-archive.svg" alt="Bit Article" width="250"/> — Archi-platform for biographical content
 <sub>🗓️ Developed in January 2026</sub>
 
 This project is a **structured platform developed with HTML5 & CSS3**, composed of four pages: `index.html`, `cataleg.html`, `fitxa.html`, and `blog.html`, along with additional assets such as CSS stylesheets in `/css` and images in `/img`.
