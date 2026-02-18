@@ -1,7 +1,7 @@
 # <img src="img/logo-biopic-archive.svg" alt="Bit Article" width="200"/> — Archi-platform for biographical content
 <sub>🗓️ Developed in January 2026</sub>
 
-This project is a **structured platform developed with HTML5 & CSS3**, composed of four pages: `index.html`, `cataleg.html`, `fitxa.html`, and `blog.html`, along with additional assets such as CSS stylesheets in `/css` and images in `/img`.
+This project is a **structured platform developed with HTML5 & CSS3**, composed of four pages: `index.html`, `cataleg.html`, `fitxa.html`, and `blog.html`, along with additional assets such as CSS stylesheets in `/css` and images in `/img`.  
 The goal was to solidify the concepts from CSS Layout and Responsive Design, presenting well-organized HTML documents using semantic elements, Flexbox, and CSS Grid.
 
 ---
