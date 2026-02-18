@@ -28,7 +28,6 @@ The goal was to solidify the concepts from CSS Layout and Responsive Design, pre
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/marcturu/biopic-archive.git
-cd biopic_archive
 ```
 
 ### 2. Try the webpage locally
