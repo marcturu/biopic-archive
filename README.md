@@ -1,4 +1,4 @@
-# <img src="screenshots/logo-biopic-archive.svg" alt="BiopicArchieve" width="200"/> — Responsive biographical content platform
+# <img src="screenshots/logo-biopic-archive.svg" alt="BiopicArchieve" width="200"/> — Responsive biographical platform
 <sub>🗓️ Developed in December 2025</sub>
 
 This project is a **structured platform developed with HTML5 & CSS3**, composed of four pages: `index.html`, `cataleg.html`, `fitxa.html`, and `blog.html`, along with additional assets such as CSS stylesheets in `/css` and images in `/img`.  
